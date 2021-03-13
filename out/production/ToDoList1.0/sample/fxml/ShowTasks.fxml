@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ShowTasksController">
+    <children>
+        <AnchorPane layoutX="-1.0" layoutY="85.0" prefHeight="315.0" prefWidth="700.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <TableView id="table_view" fx:id="table_view" layoutX="2.0" prefHeight="316.0" prefWidth="700.0">
+              <columns>
+                <TableColumn id="id" fx:id="id" prefWidth="32.55651807785034" text="id" />
+                <TableColumn id="project_name" fx:id="project_name" prefWidth="179.47827911376953" text="project_name" />
+                  <TableColumn id="task_title" fx:id="task_title" prefWidth="350.6086730957031" text="task_title" />
+                  <TableColumn id="date" fx:id="date" minWidth="0.0" prefWidth="137.73919677734375" text="date" />
+              </columns>
+            </TableView>
+         </children>
+        </AnchorPane>
+        <Label fx:id="Title" layoutX="246.0" layoutY="22.0" prefHeight="52.0" prefWidth="207.0" text="To Do List" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Calibri Light" size="48.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
